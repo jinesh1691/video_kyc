@@ -1,0 +1,6 @@
+D:\NodejsWebApp1\obj\Debug\NodejsWebApp1.njsprojAssemblyReference.cache
+D:\NodejsWebApp1\bin\Microsoft.NodejsTools.WebRole.dll
+D:\jinesh\NodejsWebApp1\obj\Debug\NodejsWebApp1.njsprojAssemblyReference.cache
+D:\jinesh\NodejsWebApp1\obj\Debug\NodejsWebApp1.njsproj.CoreCompileInputs.cache
+D:\jinesh\NodejsWebApp1\bin\Microsoft.NodejsTools.WebRole.dll
+D:\Jinesh G Drive\VideoKYC\NodejsWebApp1\bin\Microsoft.NodejsTools.WebRole.dll
