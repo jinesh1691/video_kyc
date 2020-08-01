@@ -150,6 +150,10 @@ function handleLogin(success) {
             yourConn.onaddstream = function (e) {
                 //remoteVideo.src = window.URL.createObjectURL(e.stream);
                 remoteVideo.srcObject = e.stream;
+                //Play it
+remoteVideo.autoplay = true;
+remoteVideo.playsInline = true;
+remoteVideo.muted = true;
             };
 
             // Setup ice handling 
