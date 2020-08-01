@@ -1,13 +1,18 @@
 {
   "name": "nodejs-web-app1",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku-examples/node-ws-test.git"
+  }
   "description": "NodejsWebApp1",
   "main": "server.js",
   "author": {
-    "name": ""
+    "name": "jinesh mehta"
   },
   "dependencies": {
     "webrtc-adapter": "^7.6.3",
-    "ws": "^7.3.1"
+    "ws": "^7.3.1",
+    "express": "^4.17.1"
   }
 }
