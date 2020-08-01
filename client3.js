@@ -4,7 +4,7 @@ var connectedUser;
 
 //connecting to our signaling server 
 //var conn = new WebSocket('wss://echo.websocket.org/');
-var conn = new WebSocket('wss://chatkyc.herokuapp.com//');
+var conn = new WebSocket('wss://chatkyc.herokuapp.com/');
 
 
 
