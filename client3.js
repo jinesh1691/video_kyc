@@ -128,9 +128,9 @@ function handleLogin(success) {
         //else {
         //    console.log('Not Found..');
         //}
-        //navigator.getUserMedia({ video: { width: 320, height: 240 }, audio: false }, function (myStream) {
+        navigator.getUserMedia({ video: { width: 320, height: 240 }, audio: false }, function (myStream) {
 
-        navigator.webkitGetUserMedia({ video: { width: 320, height: 240 }, audio: false }, function (myStream) {
+        //navigator.webkitGetUserMedia({ video: { width: 320, height: 240 }, audio: false }, function (myStream) {
             stream = myStream;
 
             //displaying local video stream on the page 
