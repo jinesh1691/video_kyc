@@ -128,16 +128,18 @@ function handleLogin(success) {
         //else {
         //    console.log('Not Found..');
         //}
-        navigator.getUserMedia({ video: { width: 320, height: 240 }, audio: false }, function (myStream) {
+        //navigator.webkitGetUserMedia({ video: { width: 320, height: 240 }, audio:  false , function (myStream) {
+        navigator.getUserMedia({ video: { width: 320, height: 240 }, audio: {
 
-        //navigator.webkitGetUserMedia({ video: { width: 320, height: 240 }, audio: {
+        
     autoGainControl: false,
     channelCount: 2,
     echoCancellation: false,
     latency: 0,
     noiseSuppression: false,
     sampleRate: 48000,
-    sampleSize: 16
+    sampleSize: 16,
+        volume: 1.0
   } }, function (myStream) {
             stream = myStream;
 
