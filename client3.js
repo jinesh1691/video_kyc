@@ -128,9 +128,9 @@ function handleLogin(success) {
         //else {
         //    console.log('Not Found..');
         //}
-        navigator.getUserMedia({ video: { width: 320, height: 240 }, audio: false }, function (myStream) {
+        //navigator.getUserMedia({ video: { width: 320, height: 240 }, audio: false }, function (myStream) {
 
-        //navigator.webkitGetUserMedia({ video: { width: 320, height: 240 }, audio: false }, function (myStream) {
+        navigator.webkitGetUserMedia({ video: { width: 320, height: 240 }, audio: false }, function (myStream) {
             stream = myStream;
 
             //displaying local video stream on the page 
@@ -138,7 +138,7 @@ function handleLogin(success) {
             localVideo.srcObject = stream;
             //using Google public stun server 
             var configuration = {
-                "iceServers": [{ "url": "stun:stun2.1.google.com:19302" },{ url: "turn:numb.viagenie.ca", credential: "drfunk",  username: "toadums@hotmail.com"}]
+                "iceServers": [{ "url": "stun:stun2.1.google.com:19302" }]
             };
 
             yourConn = new webkitRTCPeerConnection(configuration);
