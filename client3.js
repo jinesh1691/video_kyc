@@ -144,10 +144,13 @@ function handleLogin(success) {
             //localVideo.src = stream; //window.URL.createObjectURL(stream);
             localVideo.srcObject = stream;
             //using Google public stun server 
-            var configuration = {iceServers: 
-                                 { "iceServers": [{ "url": "stun:stun.l.google.com:19302" }] },
-                                    constraints: { 'mandatory': { 'OfferToReceiveAudio': true, 'OfferToReceiveVideo': true } 
-                                 }};
+                        var configuration = {
+                "iceServers": [{ "url": "stun:stun2.1.google.com:19302" }, {
+    url: 'turn:turn.anyfirewall.com:443?transport=tcp',
+    credential: 'webrtc',
+    username: 'webrtc'
+}]
+            };
 
             yourConn = new webkitRTCPeerConnection(configuration);
 
