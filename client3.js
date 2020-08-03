@@ -132,11 +132,9 @@ function handleLogin(success) {
         navigator.getUserMedia({ video: { width: 320, height: 240 }, audio: {
     autoGainControl: false,
     channelCount: 2,
-    echoCancellation: false,
+    echoCancellation: true,
     latency: 0,
-    noiseSuppression: false,
-    sampleRate: 48000,
-    sampleSize: 16
+    noiseSuppression: false
   } }, function (myStream) {
             stream = myStream;
 
