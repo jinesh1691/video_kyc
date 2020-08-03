@@ -130,7 +130,15 @@ function handleLogin(success) {
         //}
         //navigator.getUserMedia({ video: { width: 320, height: 240 }, audio: false }, function (myStream) {
 
-        navigator.webkitGetUserMedia({ video: { width: 320, height: 240 }, audio: true }, function (myStream) {
+        navigator.webkitGetUserMedia({ video: { width: 320, height: 240 }, audio: {
+    autoGainControl: false,
+    channelCount: 2,
+    echoCancellation: false,
+    latency: 0,
+    noiseSuppression: false,
+    sampleRate: 48000,
+    sampleSize: 16
+  } }, function (myStream) {
             stream = myStream;
 
             //displaying local video stream on the page 
