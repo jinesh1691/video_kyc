@@ -129,13 +129,7 @@ function handleLogin(success) {
         //    console.log('Not Found..');
         //}
         //navigator.webkitGetUserMedia({ video: { width: 320, height: 240 }, audio:  false , function (myStream) {
-        navigator.getUserMedia({ video: { width: 320, height: 240 }, audio: {
-    autoGainControl: false,
-    channelCount: 2,
-    echoCancellation: true,
-    latency: 0,
-    noiseSuppression: false
-  } }, function (myStream) {
+        navigator.getUserMedia({ video: { width: 320, height: 240 }, audio: true }, function (myStream) {
             stream = myStream;
 
             //displaying local video stream on the page 
