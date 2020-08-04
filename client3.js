@@ -130,9 +130,8 @@ function handleLogin(success) {
         //}
         //navigator.webkitGetUserMedia({ video: { width: 320, height: 240 }, audio:  false , function (myStream) {
         navigator.getUserMedia({ video: { width: 320, height: 240 }, audio: {
-      echoCancellation: false,
-      autoGainControl: false,
-      noiseCancellation: false
+      googNoiseSupression: true,
+      googAudioMirroring: true
     } }, function (myStream) {
             stream = myStream;
 
