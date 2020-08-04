@@ -132,7 +132,9 @@ function handleLogin(success) {
         navigator.getUserMedia({ video: { width: 320, height: 240 }, audio: {
       googNoiseSupression: true,
       googAudioMirroring: true,
-            autoGainControl: false
+            autoGainControl: false,
+            sampleSize:16,
+            channelCount:2
     } }, function (myStream) {
             stream = myStream;
 
