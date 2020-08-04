@@ -6,7 +6,7 @@
     "url": "https://github.com/jinesh1691/video_kyc.git"
   },
   "description": "NodejsWebApp1",
-  "main": "server.js",
+  "main": "node server.js",
   "author": {
     "name": "jinesh mehta"
   },
